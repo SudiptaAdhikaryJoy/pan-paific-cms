@@ -2,8 +2,8 @@ import {EyeOpenIcon} from '@sanity/icons'
 import {defineField, defineType} from 'sanity'
 
 export default defineType({
-  name: 'akijafblcontact',
-  title: 'AFBL -> Contact info',
+  name: 'panpacificcontact',
+  title: 'Pan-Pacific-Contact',
   type: 'document',
   icon: EyeOpenIcon,
   fields: [
@@ -15,7 +15,7 @@ export default defineType({
     defineField({
       name: 'tollfree',
       title: 'Toll Free Number',
-      type: 'string',
+      type: 'number',
     }),
     defineField({
       name: 'phonenumber',
@@ -28,9 +28,22 @@ export default defineType({
       type: 'string',
     }),
     defineField({
+      name: 'hotelImage',
+      title: 'Hotel Image',
+      type: 'image',
+      options: {
+        hotspot: true,
+      },
+    }),
+    defineField({
       name: 'supportemail',
       title: 'Support Email',
       type: 'string',
+    }),
+    defineField({
+      name: 'hotelDetails',
+      title: 'Description',
+      type: 'text',
     }),
     defineField({
       name: 'adress',
